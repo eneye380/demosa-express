@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OAuth Tutorials</title>
+        <link href="/assets/css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <% if (user) { %>
+                <li><a href="/auth/logout">Log out</a></li>
+                <% } else { %>
+                <li><a href="/auth/login">Login</a></li>
+                <% } %>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="page-banner" style="background-image: url('/assets/img/banner-1.png')">
+        </div>
+        <header>
+            <h1>Net Ninja OAuth Tut's</h1>
+            <h2>Homepage</h2>
+        </header>
+        <main>
+            <p>Probably the best OAuth tutorials on the planet :)</p>
+        </main>
+    </body>
+</html>
