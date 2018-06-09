@@ -3,7 +3,7 @@ body {
   margin: 0; }
 
 nav {
-  background: #1A237E;
+  background: #1A2371;
   padding: 20px 10px; }
 
 nav ul {
@@ -35,7 +35,7 @@ main, header {
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
-  background: #1A237E; }
+  background: #1A2371; }
 
 main img {
   width: 40px;
@@ -47,5 +47,4 @@ main p {
   display: inline-block; }
 
 .page-banner {
-  background-image: url("/assets/img/banner-1.png");
   height: 100%; }
