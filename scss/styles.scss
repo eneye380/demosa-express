@@ -1,7 +1,13 @@
 @import "variables";
+@import "mixins";
+@import "slideshow";
 body{
     font-family: arial;
     margin: 0;
+}
+div #demosa-logo{
+    display: inline-block;
+    color:#fff;
 }
 nav{
     background: $theme-primary-color;
@@ -11,11 +17,16 @@ nav ul{
     max-width: 960px;
     margin: 0 auto;
     padding: 0;
+    @include clearFix;
 }
 nav li{
     list-style-type: none;
     display: inline-block;
     margin: 0 10px 0 0;
+    float: right;
+    &:hover{
+        background: #333;
+    }
 }
 nav a{
     color: #fff;
@@ -27,9 +38,11 @@ nav a{
 }
 main, header{
     max-width: 960px;
-    margin: 30px auto;
     padding: 0 10px;
     color: #333;
+}
+header{
+    margin: 0px auto;
 }
 .google-btn{
     color: #fff;
@@ -37,6 +50,28 @@ main, header{
     font-size: 18px;
     padding: 10px;
     background:$theme-primary-color;
+}
+main{
+    margin: 30px auto;
+    .content-right{
+        border: 1px solid red;
+        width:62%;
+        float:right;
+        clear: left;
+        
+    }
+    .content-left{
+        border: 1px solid green;
+        width:62%;
+        float:left;
+        clear: right;
+        
+    }
+    #history{ 
+        img{
+        float: left;
+    }
+}
 }
 main img{
     width: 40px;
@@ -50,4 +85,11 @@ main p{
 .page-banner{
     
     height: 100%;
+}
+footer{
+    background: #000;
+    position: relative;
+    bottom: 0px;
+    color: #fff;
+    width: 100%;
 }

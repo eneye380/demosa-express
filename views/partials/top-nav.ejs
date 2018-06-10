@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>OAuth Tutorials</title>
-        <link href="/assets/css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <% if (user) { %>
-                <li><a href="/auth/logout">Log out</a></li>
+
+<head>
+    <meta charset="utf-8">
+    <title>Demonstration Old Students' Association</title>
+    <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <% if (user) { %>
+                <li>
+                    <a href="/auth/logout">Log out</a>
+                </li>
                 <% } else { %>
-                <li><a href="/auth/login">Login</a></li>
-                <% } %>
-                <li><a href="/">Homepage</a></li>
-                <li><a href="/profile">Profile</a></li>
-            </ul>
-        </nav>
+                    <li>
+                        <a href="/auth/login">Members</a>
+                    </li>
+                    <% } %>
+                        <li>
+                            <a href="/">Activities</a>
+                        </li>
+                        <li>
+                            <a href="/profile">About</a>
+                        </li>
+                        <div id="demosa-logo">
+                            LOGO
+                        </div>
+        </ul>
+    </nav>
