@@ -138,12 +138,12 @@ header {
 main {
   margin: 30px auto; }
   main .content-right {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 62%;
     float: right;
     clear: left; }
   main .content-left {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     width: 62%;
     float: left;
     clear: right; }
@@ -164,7 +164,10 @@ main p {
 
 footer {
   background: #000;
-  position: relative;
-  bottom: 0px;
   color: #fff;
-  width: 100%; }
+  width: 100%;
+  clear: both;
+  height: 200px; }
+
+.main {
+  margin-bottom: 20px; }
